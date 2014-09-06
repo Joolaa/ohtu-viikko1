@@ -84,7 +84,7 @@ public class VarastoTest {
     public void maaraSopiva() {
         double alku = varasto.getSaldo();
         
-        varasto.lisaaVarastoon(0.0);
+        varasto.lisaaVarastoon(1.0);
         
         assertEquals(alku, varasto.getSaldo(), vertailuTarkkuus);
         
