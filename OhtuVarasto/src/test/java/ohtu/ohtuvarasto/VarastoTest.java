@@ -88,8 +88,8 @@ public class VarastoTest {
         
         assertEquals(alku, varasto.getSaldo(), vertailuTarkkuus);
         
-        varasto.lisaaVarastoon(varasto.getSaldo()
-                - varasto.getTilavuus() - 0.5);
+        varasto.lisaaVarastoon(varasto.getTilavuus() - 0.5
+                - varasto.getSaldo());
         assertEquals(varasto.getTilavuus() - 0.5, varasto.getSaldo(),
                 vertailuTarkkuus);
     }
